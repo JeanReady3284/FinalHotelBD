@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.controlador.GerenteController">
+   <children>
+      <Label layoutX="183.0" layoutY="23.0" text="Nuevo Gerente">
+         <font>
+            <Font name="Arial Bold" size="33.0" />
+         </font>
+      </Label>
+      <VBox layoutX="14.0" layoutY="85.0" prefHeight="295.0" prefWidth="576.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="215.0" text="Nombre:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtNombre" prefHeight="25.0" prefWidth="334.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="215.0" text="Apellido Paterno:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtApellidoPaterno" prefHeight="25.0" prefWidth="334.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="215.0" text="Apellido Materno:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtApellidoMaterno" prefHeight="25.0" prefWidth="334.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="206.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="215.0" text="RFC:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtRfc" prefHeight="25.0" prefWidth="334.0" stylesheets="@../css/application.css" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="232.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="215.0" text="Correo:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCorreo" prefHeight="25.0" prefWidth="334.0" stylesheets="@../css/application.css" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="246.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="215.0" text="Teléfono:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtTelefono" prefHeight="25.0" prefWidth="334.0" stylesheets="@../css/application.css" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="100.0">
+               <children>
+                  <Button fx:id="btnAceptar" mnemonicParsing="false" onAction="#nuevoGerente" text="Aceptar" />
+                  <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#cancelarGerente" text="Cancelar" />
+               </children>
+               <padding>
+                  <Insets left="180.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

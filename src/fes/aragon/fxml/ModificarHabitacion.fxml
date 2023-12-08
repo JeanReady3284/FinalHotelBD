@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #002847;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.controlador.ModificarHabitacionController">
+   <top>
+      <ImageView fitHeight="119.0" fitWidth="310.0" pickOnBounds="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../recursos/portada.png" />
+         </image>
+      </ImageView>
+   </top>
+   <bottom>
+      <HBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="600.0" spacing="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnNuevo" layoutX="156.0" layoutY="10.0" mnemonicParsing="false" onAction="#nuevo" stylesheets="@../css/application.css" text="Nueva" textFill="#f5f2f2">
+               <graphic>
+                  <FontAwesomeIconView fill="#eeeded" glyphName="CHECK_CIRCLE_ALT" selectionFill="#f2f0f0" size="30" />
+               </graphic>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnModificar" mnemonicParsing="false" onAction="#modificar" stylesheets="@../css/application.css" text="Modificar" textFill="#f5f2f2">
+               <graphic>
+                  <FontAwesomeIconView fill="#eeeded" glyphName="CHECK_CIRCLE_ALT" selectionFill="#f2f0f0" size="30" />
+               </graphic>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCancelar" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#cancelar" stylesheets="@../css/application.css" text="Cancelar" textFill="#f5f2f2">
+               <graphic>
+                  <FontAwesomeIconView fill="#eeeded" glyphName="CHECK_CIRCLE_ALT" selectionFill="#f2f0f0" size="30" />
+               </graphic>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <TableView fx:id="tblHabitacion" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="clmNumero" prefWidth="154.0" text="Número" />
+          <TableColumn fx:id="clmCosto" prefWidth="107.0" text="Costo" />
+            <TableColumn fx:id="clmRedrigerador" prefWidth="122.0" text="Refrigerador" />
+            <TableColumn fx:id="clmTipo" prefWidth="215.0" text="Tipo" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
